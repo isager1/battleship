@@ -1,0 +1,25 @@
+ 
+ palyer.js :
+ rightClick: function(p) {
+            if(this.getPhase() === this.PHASE_INIT_PLAYER) {
+                p.preventDefault();
+                var ship = this.players[0].fleet[this.players[0].activeShip];
+                if(this.axe === 'Horizontale') {
+                    this.axe = 'Verticale';
+                    ship.dom.style.transform = 'rotate(90deg)';
+                    
+                } else {
+                    this.axe = 'Horizontale';
+                    ship.dom.style.transform = 'rotate(180deg)';
+                }
+
+                this.handleMouseMove(p);
+            
+          }
+
+game.js : 
+ && this.players[0].verifShipPosition(utils.eq(e.target), utils.eq(e.target.parentNode)) 
+                    && this.players[0].setActiveShipPosition(utils.eq(e.target), utils.eq(e.target.parentNode))) 
+                    || (this.players[0].orientation == 'Verticale' 
+                    && this.players[0].verifShipPositionRight(utils.eq(e.target), utils.eq(e.target.parentNode)) 
+                    && this.players[0].setActiveShipPositionRight(utils.eq(e.target), utils.eq(e.target.parentNode)))) {

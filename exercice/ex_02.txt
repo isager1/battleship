@@ -1,0 +1,3 @@
+ renderMiniMap: function () {
+            document.getElementsByClassName("mini-grid").item(0).innerHTML = document.getElementsByClassName('main-grid').item(0).innerHTML;
+        }

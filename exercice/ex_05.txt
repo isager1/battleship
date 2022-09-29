@@ -1,0 +1,21 @@
+computer.js
+
+ gameOver: 0,
+  role: 1,
+  nextTries: [],
+
+   if ((this.orientation == 'Horizontale' 
+                    && this.verifShipPosition(y, x) 
+                    && this.setActiveShipPosition(y, x)) 
+                    || (this.orientation == 'Verticale' 
+
+
+ randomOrientation: function() {
+            var rand = Math.random() * 10;
+            if(rand > 4) {
+                this.orientation = 'Horizontale';
+            } else {
+                this.orientation = 'Verticale';
+            }
+        },
+

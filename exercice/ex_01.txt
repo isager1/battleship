@@ -1,0 +1,2 @@
+if (ship.dom.parentNode) {
+                    ship.dom.parentNode.removeChild(ship.dom);

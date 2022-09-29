@@ -1,0 +1,7 @@
+ game.js 
+ 
+  if(document.querySelectorAll('.main-grid>.row:nth-of-type('+(line+1)+')>.cell:nth-of-type('+(col+1)+')').item(0).style.backgroundColor === 'red') {
+
+ 
+                    if(target.role === 1) {
+                        if(document.querySelectorAll('.main-grid>.row:nth-of-type('+(line+1)+')>.cell:nth-of-type('+(col+1)+')').item(0).style.backgroundColor === 'grey') {

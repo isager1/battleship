@@ -1,0 +1,3 @@
+  setGame: function(player) {
+            this.player = player;
+        }
